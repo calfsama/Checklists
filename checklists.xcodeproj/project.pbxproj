@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97B9ABFB28102A1900F5489B /* checklists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9ABFA28102A1900F5489B /* checklists.swift */; };
+		97B9ABFE28103A3D00F5489B /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9ABFD28103A3D00F5489B /* GroupTableViewCell.swift */; };
 		97D96FB528099C9C0047DCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D96FB428099C9C0047DCB2 /* AppDelegate.swift */; };
 		97D96FB728099C9C0047DCB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D96FB628099C9C0047DCB2 /* SceneDelegate.swift */; };
 		97D96FB928099C9C0047DCB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D96FB828099C9C0047DCB2 /* MainViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97B9ABFA28102A1900F5489B /* checklists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checklists.swift; sourceTree = "<group>"; };
+		97B9ABFD28103A3D00F5489B /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		97D96FB128099C9C0047DCB2 /* checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D96FB428099C9C0047DCB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97D96FB628099C9C0047DCB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97B9ABF9281029AD00F5489B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97B9ABFA28102A1900F5489B /* checklists.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97B9ABFC281039E300F5489B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97B9ABFD28103A3D00F5489B /* GroupTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		97D96FA828099C9C0047DCB2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +76,8 @@
 		97D96FB328099C9C0047DCB2 /* checklists */ = {
 			isa = PBXGroup;
 			children = (
+				97B9ABFC281039E300F5489B /* Cells */,
+				97B9ABF9281029AD00F5489B /* Models */,
 				97D96FB428099C9C0047DCB2 /* AppDelegate.swift */,
 				97D96FB628099C9C0047DCB2 /* SceneDelegate.swift */,
 				97D96FB828099C9C0047DCB2 /* MainViewController.swift */,
@@ -138,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97B9ABFB28102A1900F5489B /* checklists.swift in Sources */,
 				97D96FB928099C9C0047DCB2 /* MainViewController.swift in Sources */,
 				97D96FB528099C9C0047DCB2 /* AppDelegate.swift in Sources */,
 				97D96FB728099C9C0047DCB2 /* SceneDelegate.swift in Sources */,
+				97B9ABFE28103A3D00F5489B /* GroupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
