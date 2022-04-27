@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9756E85F28166F18007B39F4 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756E85E28166F18007B39F4 /* AddItemTableViewController.swift */; };
+		9756E86328166FA2007B39F4 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756E86228166FA2007B39F4 /* TextFieldTableViewCell.swift */; };
+		9756E86528166FC8007B39F4 /* addItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756E86428166FC8007B39F4 /* addItem.swift */; };
+		97A1DC9C2816BC4C00993901 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DC9B2816BC4C00993901 /* SwitchTableViewCell.swift */; };
+		97A1DC9E2816BC5B00993901 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DC9D2816BC5B00993901 /* DateTableViewCell.swift */; };
 		97B9ABFB28102A1900F5489B /* checklists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9ABFA28102A1900F5489B /* checklists.swift */; };
 		97B9ABFE28103A3D00F5489B /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9ABFD28103A3D00F5489B /* GroupTableViewCell.swift */; };
 		97B9AC012812CBE800F5489B /* GroupDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9AC002812CBE800F5489B /* GroupDetailsTableViewController.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9756E85E28166F18007B39F4 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		9756E86228166FA2007B39F4 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		9756E86428166FC8007B39F4 /* addItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addItem.swift; sourceTree = "<group>"; };
+		97A1DC9B2816BC4C00993901 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		97A1DC9D2816BC5B00993901 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
 		97B9ABFA28102A1900F5489B /* checklists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checklists.swift; sourceTree = "<group>"; };
 		97B9ABFD28103A3D00F5489B /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		97B9AC002812CBE800F5489B /* GroupDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsTableViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +62,7 @@
 			children = (
 				97B9ABFA28102A1900F5489B /* checklists.swift */,
 				97B9AC022812CE0800F5489B /* checklistItem.swift */,
+				9756E86428166FC8007B39F4 /* addItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -61,6 +72,9 @@
 			children = (
 				97B9ABFD28103A3D00F5489B /* GroupTableViewCell.swift */,
 				97B9AC042812DBB500F5489B /* ChecklistItemTableViewCell.swift */,
+				9756E86228166FA2007B39F4 /* TextFieldTableViewCell.swift */,
+				97A1DC9B2816BC4C00993901 /* SwitchTableViewCell.swift */,
+				97A1DC9D2816BC5B00993901 /* DateTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -70,6 +84,7 @@
 			children = (
 				97D96FB828099C9C0047DCB2 /* MainViewController.swift */,
 				97B9AC002812CBE800F5489B /* GroupDetailsTableViewController.swift */,
+				9756E85E28166F18007B39F4 /* AddItemTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,12 +194,17 @@
 			files = (
 				97B9AC032812CE0800F5489B /* checklistItem.swift in Sources */,
 				97B9ABFB28102A1900F5489B /* checklists.swift in Sources */,
+				9756E86528166FC8007B39F4 /* addItem.swift in Sources */,
 				97D96FB928099C9C0047DCB2 /* MainViewController.swift in Sources */,
 				97B9AC012812CBE800F5489B /* GroupDetailsTableViewController.swift in Sources */,
+				97A1DC9C2816BC4C00993901 /* SwitchTableViewCell.swift in Sources */,
 				97D96FB528099C9C0047DCB2 /* AppDelegate.swift in Sources */,
 				97D96FB728099C9C0047DCB2 /* SceneDelegate.swift in Sources */,
+				9756E86328166FA2007B39F4 /* TextFieldTableViewCell.swift in Sources */,
 				97B9AC052812DBB500F5489B /* ChecklistItemTableViewCell.swift in Sources */,
 				97B9ABFE28103A3D00F5489B /* GroupTableViewCell.swift in Sources */,
+				9756E85F28166F18007B39F4 /* AddItemTableViewController.swift in Sources */,
+				97A1DC9E2816BC5B00993901 /* DateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
