@@ -9,7 +9,7 @@ import UIKit
 
 class AddItemTableViewController: UITableViewController {
     
-
+    var item: ChecklistItem?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,10 @@ class AddItemTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TextCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TextCell", for: indexPath) as! TextFieldTableViewCell
+            if let item = item{
+                cell.addText.text = item.name
+            }
             return cell
         }
         if indexPath.section == 1 {

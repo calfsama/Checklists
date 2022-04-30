@@ -12,14 +12,7 @@ import UIKit
 // 2. 
 
 class GroupDetailsTableViewController: UITableViewController {
-    var items: [ChecklistItem] = [
-        ChecklistItem(isChecked: true, name: "Walk the dog"),
-        ChecklistItem(isChecked: true, name: "Brush teeth"),
-        ChecklistItem(isChecked: false, name: "Lesrn iOS development"),
-        ChecklistItem(isChecked: false, name: "Soccer practice"),
-        ChecklistItem(isChecked: true, name: "Eat ice-cream"),
-        ChecklistItem(isChecked: false, name: "Dance in the rain")
-    ]
+    var items: [ChecklistItem] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,5 +93,18 @@ class GroupDetailsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GroupDetailsToItamDetails",
+           let vc = segue.destination as? AddItemTableViewController,
+           let indexPath = tableView.indexPathForSelectedRow{
+            vc.title = "Edit item"
+            //items[indexPath.row].name
+            vc.item = items[indexPath.row]
+        }
+                
+    }
 }
+    
+
+
