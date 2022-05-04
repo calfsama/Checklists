@@ -9,10 +9,10 @@ import UIKit
 
 class SwitchTableViewCell: UITableViewCell {
 
-
+    var onSwitchChanged: (() -> Void)?
     
-
     @IBOutlet weak var switchCondition: UISwitch!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +23,9 @@ class SwitchTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    @IBAction func switchDidChange(_ sender: UISwitch) {
+        print("Значение свитча: \(sender.isOn)")
+        onSwitchChanged?()
+    }
+    
 }

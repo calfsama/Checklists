@@ -173,8 +173,11 @@
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4o-Ld-y2b">
                                             <rect key="frame" x="363" y="8" width="51" height="34"/>
+                                            <connections>
+                                                <action selector="switchDidChange:" destination="MbE-0k-O20" eventType="valueChanged" id="REo-jc-Kvg"/>
+                                            </connections>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZe-yP-QRw">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-s4-rBr">
                                             <rect key="frame" x="16" y="8" width="85.333333333333329" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -184,14 +187,14 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="h4o-Ld-y2b" secondAttribute="trailing" constant="16" id="5xz-1T-dPN"/>
                                         <constraint firstAttribute="bottom" secondItem="h4o-Ld-y2b" secondAttribute="bottom" constant="8" id="6w6-z3-2r1"/>
-                                        <constraint firstAttribute="bottom" secondItem="XZe-yP-QRw" secondAttribute="bottom" constant="8" id="azo-cP-4E7"/>
-                                        <constraint firstItem="XZe-yP-QRw" firstAttribute="top" secondItem="vcD-yd-r29" secondAttribute="top" constant="8" id="ckl-rR-8Bg"/>
-                                        <constraint firstItem="XZe-yP-QRw" firstAttribute="leading" secondItem="vcD-yd-r29" secondAttribute="leading" constant="16" id="o8n-TJ-Wvq"/>
+                                        <constraint firstItem="Ip2-s4-rBr" firstAttribute="leading" secondItem="vcD-yd-r29" secondAttribute="leading" constant="16" id="Fyn-pt-52b"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ip2-s4-rBr" secondAttribute="bottom" constant="8" id="hxH-xa-0YP"/>
+                                        <constraint firstItem="Ip2-s4-rBr" firstAttribute="top" secondItem="vcD-yd-r29" secondAttribute="top" constant="8" id="pkE-ZS-5Ul"/>
                                         <constraint firstItem="h4o-Ld-y2b" firstAttribute="top" secondItem="vcD-yd-r29" secondAttribute="top" constant="8" id="xwr-J2-l4S"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="switchCondition" destination="h4o-Ld-y2b" id="Q4p-4R-Wdq"/>
+                                    <outlet property="switchCondition" destination="h4o-Ld-y2b" id="wMh-hT-4W5"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" id="X1t-0K-LsD" customClass="DateTableViewCell" customModule="checklists" customModuleProvider="target">
@@ -204,7 +207,7 @@
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="kVE-o5-F8O">
                                             <rect key="frame" x="92" y="8" width="320" height="216.33333333333334"/>
                                         </datePicker>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlW-pA-Zql">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLu-dn-lBY">
                                             <rect key="frame" x="16" y="8" width="71" height="216.33333333333334"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -212,12 +215,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vlW-pA-Zql" firstAttribute="leading" secondItem="IX8-yb-DsP" secondAttribute="leading" constant="16" id="Ci9-qM-ovh"/>
-                                        <constraint firstItem="vlW-pA-Zql" firstAttribute="top" secondItem="IX8-yb-DsP" secondAttribute="top" constant="8" id="Etk-Oh-FL8"/>
+                                        <constraint firstItem="pLu-dn-lBY" firstAttribute="top" secondItem="IX8-yb-DsP" secondAttribute="top" constant="8" id="3EM-A7-CCe"/>
                                         <constraint firstAttribute="bottom" secondItem="kVE-o5-F8O" secondAttribute="bottom" constant="8" id="Vl0-7v-teq"/>
                                         <constraint firstAttribute="trailing" secondItem="kVE-o5-F8O" secondAttribute="trailing" constant="16" id="YTa-7F-xjZ"/>
+                                        <constraint firstItem="pLu-dn-lBY" firstAttribute="leading" secondItem="IX8-yb-DsP" secondAttribute="leading" constant="16" id="ZA5-oo-7sZ"/>
                                         <constraint firstItem="kVE-o5-F8O" firstAttribute="top" secondItem="IX8-yb-DsP" secondAttribute="top" constant="8" id="ZJK-Hr-eb4"/>
-                                        <constraint firstAttribute="bottom" secondItem="vlW-pA-Zql" secondAttribute="bottom" constant="8" id="rtd-By-9JK"/>
+                                        <constraint firstAttribute="bottom" secondItem="pLu-dn-lBY" secondAttribute="bottom" constant="8" id="v7f-S4-X6P"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
